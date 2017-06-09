@@ -641,10 +641,19 @@ table {
 .main-navigation li {
   float: left;
   position: relative;
+  margin-right:1px;
+  margin-left: 1px;
 }
 .main-navigation a {
   display: block;
   text-decoration: none;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.main-navigation a:hover,
+.main-navigation .current_page_item a {
+  color: #fff;
+  background-color: blue;
 }
 
 /* Small menu. */
