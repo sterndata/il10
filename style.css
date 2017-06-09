@@ -651,7 +651,8 @@ table {
   padding-right: 5px;
 }
 .main-navigation a:hover,
-.main-navigation .current_page_item a {
+.main-navigation .current_page_item a,
+.main-navigation .current-menu-item a {
   color: #fff;
   background-color: blue;
 }
