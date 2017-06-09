@@ -950,3 +950,8 @@ object {
 .gallery-caption {
   display: block;
 }
+
+/* All In One Event Calendar */
+.ai1ec-single-event .ai1ec-event-avatar  {
+   display:none;
+}
