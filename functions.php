@@ -140,6 +140,7 @@ add_action( 'widgets_init', 'il10_widgets_init' );
  */
 function il10_scripts() {
 	wp_enqueue_style( 'il10-style', get_stylesheet_uri() );
+        wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Montserrat:400,400i,600,600i');
 
 	wp_enqueue_script( 'il10-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
 
