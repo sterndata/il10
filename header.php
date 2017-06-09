@@ -23,13 +23,15 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'il10' ); ?></a>
-
+<div id="masthead-container">
 	<header id="masthead" class="site-header" role="banner">
 		<?php get_template_part( 'components/header/header', 'image' ); ?>
 
 		<?php il10_the_custom_logo(); ?>
+</div>
 
 		<?php get_template_part( 'components/navigation/navigation', 'top' ); ?>
 
 	</header>
+
 	<div id="content" class="site-content">

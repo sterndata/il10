@@ -544,7 +544,7 @@ hr {
 # Lists
 --------------------------------------------------------------*/
 ul, ol {
-  margin: 0 0 1.5em 3em;
+  margin: 0 0 1.5em 0;
 }
 
 ul {
@@ -576,7 +576,31 @@ table {
   margin: 0 0 1.5em;
   width: 100%;
 }
-
+/*--------------------------------------------------------------
+# Main Layout
+--------------------------------------------------------------*/
+.site-header, .site-content, .site-info, #top-menu {
+	max-width: 1450px;
+	margin:0 auto;
+        padding-left: 5px;
+        padding-right: 5px;
+}
+#masthead-container, #colophon {
+	background-color: blue;
+	color: #fff;
+}
+#site-navigation {
+	background-color: lightblue;
+}
+.site-info {
+	color: #fff;
+}
+.site-main {
+   padding-right: 10px;
+}
+#secondary {
+   padding-left: 10px;
+}
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -628,7 +652,12 @@ table {
 .main-navigation.toggled ul {
   display: block;
 }
-
+button.menu-toggle {
+    width: 100%;
+    text-align: right;
+    font-weight: bold;
+    font-size: 100%;
+}
 .menu-toggle:before {
   content: "\2630";
   display: inline-block;
@@ -667,31 +696,10 @@ table {
 /*--------------------------------------------------------------
 # Links
 --------------------------------------------------------------*/
-a {
+a, a:visited {
   color: royalblue;
-}
-a:visited {
-  color: purple;
-}
-a:hover, a:focus, a:active {
-  color: midnightblue;
-}
-a:focus {
-  outline: thin dotted;
-}
-a:hover, a:active {
-  outline: 0;
 }
 
-/*--------------------------------------------------------------
-# Links
---------------------------------------------------------------*/
-a {
-  color: royalblue;
-}
-a:visited {
-  color: purple;
-}
 a:hover, a:focus, a:active {
   color: midnightblue;
 }
@@ -700,6 +708,10 @@ a:focus {
 }
 a:hover, a:active {
   outline: 0;
+}
+.site-header a, .site-info a,
+.site-header a:visited, .site-info a:visited {
+	color: #fff;
 }
 
 /*--------------------------------------------------------------
