@@ -265,4 +265,17 @@ function il10_excerpt_more( $more ) {
 	global $post;
 	return ' [<a class="moretag" href="' . get_permalink( $post->ID ) . '"> Read more...</a>]';
 }
-	add_filter( 'excerpt_more', 'il10_excerpt_more' );
+add_filter( 'excerpt_more', 'il10_excerpt_more' );
+
+function il10_join_button() {
+	ob_start();
+	?>
+	<div class="join_button"><span class="join_button_txt">
+	<a href="/join/" title="Join">Join Now</a>
+        </div>
+	<?php
+	return ob_get_clean();
+	}
+add_shortcode('join_button', 'il10_join_button' );
+
+

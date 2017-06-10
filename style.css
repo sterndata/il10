@@ -904,6 +904,11 @@ h2.widget-title {
   padding-top: 1em;
   padding-left: 1em;
 }
+#secondary .textwidget,
+#secondary .tlw-list {
+  padding-left: 1em;
+  padding-right: 1em;
+}
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
@@ -1044,4 +1049,23 @@ object {
 }
 .fp_excerpt_thumb img {
   border-radius: 10px;
+}
+
+.join_button {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #ffc600;
+  border-radius: 10px;
+  text-align:center;
+  font-size:200%;
+}
+.join_button_txt {
+  text-shadow: 1px 1px 2px #444;
+  font-weight: bold;
+}
+.join_button_txt a {
+  color: #fff;
+}
+.join_button_txt:hover {
+  text-shadow: none;
 }
