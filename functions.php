@@ -8,87 +8,87 @@
  */
 
 if ( ! function_exists( 'il10_setup' ) ) :
-/**
+	/**
  * Sets up theme defaults and registers support for various WordPress features.
  *
  * Note that this function is hooked into the aftercomponentsetup_theme hook, which
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function il10_setup() {
-	/*
-	 * Make theme available for translation.
-	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on components, use a find and replace
-	 * to change 'il10' to the name of your theme in all the template files.
-	 */
-	load_theme_textdomain( 'il10', get_template_directory() . '/languages' );
+	function il10_setup() {
+		/*
+		 * Make theme available for translation.
+		 * Translations can be filed in the /languages/ directory.
+		 * If you're building a theme based on components, use a find and replace
+		 * to change 'il10' to the name of your theme in all the template files.
+		 */
+		load_theme_textdomain( 'il10', get_template_directory() . '/languages' );
 
-	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
+		// Add default posts and comments RSS feed links to head.
+		add_theme_support( 'automatic-feed-links' );
 
-	/*
-	 * Let WordPress manage the document title.
-	 * By adding theme support, we declare that this theme does not use a
-	 * hard-coded <title> tag in the document head, and expect WordPress to
-	 * provide it for us.
-	 */
-	add_theme_support( 'title-tag' );
+		/*
+		 * Let WordPress manage the document title.
+		 * By adding theme support, we declare that this theme does not use a
+		 * hard-coded <title> tag in the document head, and expect WordPress to
+		 * provide it for us.
+		 */
+		add_theme_support( 'title-tag' );
 
-	/*
-	 * Enable support for Post Thumbnails on posts and pages.
-	 *
-	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
-	 */
-	add_theme_support( 'post-thumbnails' );
+		/*
+		 * Enable support for Post Thumbnails on posts and pages.
+		 *
+		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+		 */
+		add_theme_support( 'post-thumbnails' );
 
-	add_image_size( 'il10-featured-image', 640, 9999 );
+		add_image_size( 'il10-featured-image', 640, 9999 );
 
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Top', 'il10' ),
-	) );
+		// This theme uses wp_nav_menu() in one location.
+		register_nav_menus( array(
+			'menu-1' => esc_html__( 'Top', 'il10' ),
+		) );
 
-	/**
+			/**
 	 * Add support for core custom logo.
 	 */
-	add_theme_support( 'custom-logo', array(
-		'height'      => 200,
-		'width'       => 200,
-		'flex-width'  => true,
-		'flex-height' => true,
-	) );
+			add_theme_support( 'custom-logo', array(
+				'height'      => 200,
+				'width'       => 200,
+				'flex-width'  => true,
+				'flex-height' => true,
+			) );
 
-	/*
-	 * Switch default core markup for search form, comment form, and comments
-	 * to output valid HTML5.
-	 */
-	add_theme_support( 'html5', array(
-		'search-form',
-		'comment-form',
-		'comment-list',
-		'gallery',
-		'caption',
-	) );
+			/*
+			 * Switch default core markup for search form, comment form, and comments
+			 * to output valid HTML5.
+			 */
+			add_theme_support( 'html5', array(
+				'search-form',
+				'comment-form',
+				'comment-list',
+				'gallery',
+				'caption',
+			) );
 
-	/*
-	 * Enable support for Post Formats.
-	 * See https://developer.wordpress.org/themes/functionality/post-formats/
-	 */
-	add_theme_support( 'post-formats', array(
-		'aside',
-		'image',
-		'video',
-		'quote',
-		'link',
-	) );
+			/*
+			 * Enable support for Post Formats.
+			 * See https://developer.wordpress.org/themes/functionality/post-formats/
+			 */
+			add_theme_support( 'post-formats', array(
+				'aside',
+				'image',
+				'video',
+				'quote',
+				'link',
+			) );
 
-	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'il10_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
-}
+			// Set up the WordPress core custom background feature.
+			add_theme_support( 'custom-background', apply_filters( 'il10_custom_background_args', array(
+				'default-color' => 'ffffff',
+				'default-image' => '',
+			) ) );
+	}
 endif;
 add_action( 'after_setup_theme', 'il10_setup' );
 
@@ -132,24 +132,24 @@ function il10_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-register_sidebar( array(
-                'name'          => esc_html__( 'Header', 'il10' ),
-                'id'            => 'heder-1',
-                'description'   => '',
-                'before_widget' => '<section id="%1$s" class="widget %2$s">',
-                'after_widget'  => '</section>',
-                'before_title'  => '<h2 class="widget-title">',
-                'after_title'   => '</h2>',
-        ) );
-register_sidebar( array(
-                'name'          => esc_html__( 'Footer', 'il10' ),
-                'id'            => 'footer-1',
-                'description'   => '',
-                'before_widget' => '<section id="%1$s" class="widget %2$s">',
-                'after_widget'  => '</section>',
-                'before_title'  => '<h2 class="widget-title">',
-                'after_title'   => '</h2>',
-        ) );
+	register_sidebar( array(
+				'name'          => esc_html__( 'Header', 'il10' ),
+				'id'            => 'heder-1',
+				'description'   => '',
+				'before_widget' => '<section id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</section>',
+				'before_title'  => '<h2 class="widget-title">',
+				'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+				'name'          => esc_html__( 'Footer', 'il10' ),
+				'id'            => 'footer-1',
+				'description'   => '',
+				'before_widget' => '<section id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</section>',
+				'before_title'  => '<h2 class="widget-title">',
+				'after_title'   => '</h2>',
+	) );
 
 }
 add_action( 'widgets_init', 'il10_widgets_init' );
@@ -159,7 +159,7 @@ add_action( 'widgets_init', 'il10_widgets_init' );
  */
 function il10_scripts() {
 	wp_enqueue_style( 'il10-style', get_stylesheet_uri() );
-        wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Montserrat:400,400i,600,600i');
+		wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Montserrat:400,400i,600,600i' );
 
 	wp_enqueue_script( 'il10-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
 
@@ -195,3 +195,65 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+/**
+ * Remove the sharing functions for jetpack from the excerpt or content.
+ */
+function jetpack_modify_remove_excerpt_share() {
+
+	// Remove from exceprt.
+	remove_filter( 'the_excerpt', 'sharing_display',19 );
+}
+add_action( 'loop_start', 'jetpack_modify_remove_excerpt_share' );
+
+function il10_fp_excerpts() {
+
+	/* get the most recent post for each of the categories and show an excerpt with
+	* thumbnail and links_add_base_url
+	*/
+
+	ob_start();
+	$cats = array( 2, 3, 1 );  // actions, candidates, bloginfo
+
+	$args = array(
+		'posts_per_page' => 1,
+		'offset' => 0,
+		'cat' => 0,
+		'orderby' => 'post_date',
+		'order' => 'DESC',
+		'post_type' => 'post',
+		'post_status' => 'publish',
+	);
+
+	foreach ( $cats as $cat_id ) {
+		$args['cat'] = $cat_id;
+		$recent_post = new WP_Query( $args );
+		if ( $recent_post->have_posts() ) {
+			while ( $recent_post->have_posts() ) {
+				$recent_post->the_post();
+				echo '<div class="fp_excerpt">';
+				if ( has_post_thumbnail() ) {
+					echo '<div class="fp_excerpt_thumb">';
+					echo '<a href="' . get_the_permalink() . '">';
+					echo '<img src="' . get_the_post_thumbnail_url( get_the_ID(), 'thumbnail' ) . '"/></a>';
+					echo '</div>';
+				}
+				echo '<h4><a href="' . get_the_permalink() . '">' . get_the_title() . '</a></h4>';
+				the_excerpt();
+				echo '</div>';
+			}
+			wp_reset_query();
+		} else {
+			echo '<p>No posts for cat id ' . $cat_id . '</p>';
+		}
+	}
+		return ob_get_clean();
+}
+
+	// Replaces the excerpt "Read More" text by a link
+function il10_excerpt_more( $more ) {
+	global $post;
+	return ' [<a class="moretag" href="' . get_permalink( $post->ID ) . '"> Read more...</a>]';
+}
+	add_filter( 'excerpt_more', 'il10_excerpt_more' );

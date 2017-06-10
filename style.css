@@ -960,3 +960,24 @@ object {
 .ai1ec-single-event .ai1ec-event-avatar  {
    display:none;
 }
+/* Front Page stuff */
+.fp_excerpt {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: .25em;
+  clear:both;
+}
+.fp_excerpt_thumb {
+  float:left;
+  margin-right: 1em;
+}
+.fp_excerpt h4 {
+  margin: 0;
+}
+.fp_excerpt h4 a {
+  color: #404040;
+  text-decoration: none;
+}
+.fp_excerpt p:first-of-type {
+  margin-top: 0;
+}

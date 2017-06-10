@@ -13,7 +13,7 @@
 	<div class="entry-content">
 		<?php
 			the_content();
-
+			echo il10_fp_excerpts();
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'il10' ),
 				'after'  => '</div>',
@@ -32,5 +32,6 @@
 				'</span>'
 			);
 		?>
+
 	</footer>
 </article><!-- #post-## -->
