@@ -134,7 +134,7 @@ function il10_widgets_init() {
 	) );
 	register_sidebar( array(
 				'name'          => esc_html__( 'Header', 'il10' ),
-				'id'            => 'heder-1',
+				'id'            => 'header-1',
 				'description'   => '',
 				'before_widget' => '<section id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</section>',
@@ -142,7 +142,7 @@ function il10_widgets_init() {
 				'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-				'name'          => esc_html__( 'Footer', 'il10' ),
+				'name'          => esc_html__( 'Footer 1', 'il10' ),
 				'id'            => 'footer-1',
 				'description'   => '',
 				'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -150,6 +150,15 @@ function il10_widgets_init() {
 				'before_title'  => '<h2 class="widget-title">',
 				'after_title'   => '</h2>',
 	) );
+        register_sidebar( array(
+                                'name'          => esc_html__( 'Footer 2', 'il10' ),
+                                'id'            => 'footer-2',
+                                'description'   => '',
+                                'before_widget' => '<section id="%1$s" class="widget %2$s">',
+                                'after_widget'  => '</section>',
+                                'before_title'  => '<h2 class="widget-title">',
+                                'after_title'   => '</h2>',
+        ) );
 
 }
 add_action( 'widgets_init', 'il10_widgets_init' );

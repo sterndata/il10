@@ -585,15 +585,28 @@ table {
         padding-left: 5px;
         padding-right: 5px;
 }
+#footer-widget-areas {
+        max-width: 1450px;
+        margin:0 auto;
+        padding-left:1em;
+	padding-right: 1em;
+}
 #masthead-container, #colophon {
 	background-color: blue;
 	color: #fff;
+}
+div#sidebar-header-1 {
+    position: absolute;
+    right: 1em;
+    top: 2em;
 }
 #site-navigation {
 	background-color: lightblue;
 }
 .site-info {
 	color: #fff;
+        clear:both;
+        text-align:center;
 }
 .site-main {
    padding-right: 10px;
@@ -688,6 +701,15 @@ button.menu-toggle {
     left: -999em;
     z-index: 99999;
   }
+  #sidebar-footer-1 {
+    width: 35%;
+    float:left;
+  }
+  #sidebar-footer-2 {
+    width: 65%;
+    padding-left:10px;
+    float:left;
+    }
 
 }
 .site-main .comment-navigation, .site-main

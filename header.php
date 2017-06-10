@@ -28,6 +28,7 @@
 		<?php get_template_part( 'components/header/header', 'image' ); ?>
 
 		<?php il10_the_custom_logo(); ?>
+                <div id="sidebar-header-1"><?php dynamic_sidebar( 'header-1' ); ?></div>
 </div>
 
 		<?php get_template_part( 'components/navigation/navigation', 'top' ); ?>
