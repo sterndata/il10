@@ -592,7 +592,7 @@ table {
 	padding-right: 1em;
 }
 #masthead-container, #colophon {
-	background-color: blue;
+	background-color: #1968ab;
 	color: #fff;
 }
 .site-header {
@@ -604,7 +604,7 @@ div#sidebar-header-1 {
     top: 1em;
 }
 #site-navigation {
-	background-color: lightblue;
+	background-color: #10b3de;
 }
 .site-info {
 	color: #fff;
@@ -664,7 +664,7 @@ div#sidebar-header-1 {
 .main-navigation .current_page_item a,
 .main-navigation .current-menu-item a {
   color: #fff;
-  background-color: blue;
+  background-color: #1968ab;
 }
 
 /* Small menu. */
@@ -739,11 +739,13 @@ button.menu-toggle {
 # Links
 --------------------------------------------------------------*/
 a, a:visited {
-  color: royalblue;
+  color: #1968ab;
+  text-decoration: none;
 }
 
 a:hover, a:focus, a:active {
-  color: midnightblue;
+  color: #4998cb;
+  text-decoration:underline;
 }
 a:focus {
   outline: thin dotted;
@@ -867,7 +869,41 @@ body {
 .widget select {
   max-width: 100%;
 }
+h2.widget-title {
+  margin-top: 0
+}
+.home #secondary .widget,
+.home #secondary .widget a,
+.home #secondary .widget a:visited {
+  color: #fff;
+}
+#secondary {
+  margin-top: 3em;
+}
 
+#secondary h2.widget-title { 
+  background-color: #1968ab;
+  color: #fff;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+#secondary .widget {
+  background-color: lightblue;
+  padding-bottom: .5em;
+}
+.home #secondary .widget {
+  background-color: #1968ab;
+  padding-left: .5em;
+  padding-right: .5em;
+  padding-top: .5em;
+}
+.home #secondary .widget h2 {
+  color: #ffc600;
+}
+#search-2.widget.widget_search {
+  padding-top: 1em;
+  padding-left: 1em;
+}
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
