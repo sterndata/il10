@@ -1058,6 +1058,10 @@ object {
   border-radius: 10px;
   text-align:center;
   font-size:200%;
+  box-shadow: 0px 0px 5px 4px #888;
+}
+.join_button:hover {
+  box-shadow: none;
 }
 .join_button_txt {
   text-shadow: 1px 1px 2px #444;
@@ -1066,6 +1070,6 @@ object {
 .join_button_txt a {
   color: #fff;
 }
-.join_button_txt:hover {
-  text-shadow: none;
+.join_button_txt a:hover {
+  text-decoration: none;
 }
