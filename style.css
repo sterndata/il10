@@ -1073,3 +1073,9 @@ object {
 .join_button_txt a:hover {
   text-decoration: none;
 }
+
+/* formidable */
+.frm_forms {
+  width: 80%;
+  margin: 0 auto;
+}
