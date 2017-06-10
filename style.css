@@ -582,8 +582,8 @@ table {
 .site-header, .site-content, .site-info, #top-menu {
 	max-width: 1450px;
 	margin:0 auto;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 1em;
+        padding-right: 1em;
 }
 #footer-widget-areas {
         max-width: 1450px;
