@@ -691,7 +691,9 @@ button.menu-toggle {
   .menu-toggle {
     display: none;
   }
-
+  .main-navigation a {
+    font-weight: bold;
+  }
   .main-navigation ul {
     display: block;
   }
