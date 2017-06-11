@@ -11,11 +11,13 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if ( '' != get_the_post_thumbnail() ) : ?>
+	<?php if ( ! is_single() ) { ?>
 		<div class="post-thumbnail">
 			<a href="<?php the_permalink(); ?>">
 				<?php the_post_thumbnail( 'il10-featured-image' ); ?>
 			</a>
 		</div>
+	<?php } ?>
 	<?php endif; ?>
 
 	<header class="entry-header">
