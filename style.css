@@ -1091,3 +1091,17 @@ embed, iframe, object {
   width: 80%;
   margin: 0 auto;
 }
+
+/* advanced categories widget */
+
+.advanced-categories-widget {
+	padding-bottom: 0 !important;
+}
+.advanced-categories-widget .acatw-term-header .term-title {
+	line-height: 1;
+	margin-left: 1em;
+}
+
+.widget .tagcloud {
+	padding: 0 1em 0 1em;
+}

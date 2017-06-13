@@ -216,7 +216,7 @@ function jetpack_modify_remove_excerpt_share() {
 }
 add_action( 'loop_start', 'jetpack_modify_remove_excerpt_share' );
 
-function il10_fp_excerpts() {
+function il10_fp_excerpts( $cat_id=1, $number=3 ) {
 
 	/* get the most recent post for each of the categories and show an excerpt with
 	* thumbnail and links_add_base_url
@@ -224,9 +224,9 @@ function il10_fp_excerpts() {
 
 	ob_start();
 	$args = array(
-		'posts_per_page' => 5,
+		'posts_per_page' => $number,
 		'offset' => 0,
-		// 'cat' => 0,
+		'cat' => $cat_id,
 		'orderby' => 'post_date',
 		'order' => 'DESC',
 		'post_type' => 'post',
@@ -267,8 +267,18 @@ function il10_join_button() {
 	?>
 	<div class="join_button"><span class="join_button_txt">
 	<a href="/join/" title="Join">Join Now</a>
-        </div>
+</div>
 	<?php
 	return ob_get_clean();
 	}
 add_shortcode('join_button', 'il10_join_button' );
+
+/* remove "Category:" from archive title */
+
+add_filter( 'get_the_archive_title', 'il10_archive_title' );
+function il10_archive_title( $title ) {
+	if ( is_category() ) {
+		$title = single_cat_title( '', false );
+	}
+	return $title;
+}
