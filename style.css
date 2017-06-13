@@ -711,10 +711,12 @@ a:hover, a:active {
   outline: 0;
 }
 
-.site-header a, .site-info a, .site-header a:visited, .site-info a:visited {
+.site-header a, .site-info a, .site-header a:visited, .site-info a:visited, .site-footer a {
   color: #fff;
 }
-
+.site-footer a {
+  text-decoration: underline;
+}
 
 /*--------------------------------------------------------------
 # Layout
