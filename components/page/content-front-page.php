@@ -13,10 +13,10 @@
 	<div class="entry-content">
 		<?php
 			the_content();
-			echo '<h3 style="clear:both;">' . get_cat_name(2) . '</h3>';
-			echo il10_fp_excerpts(2,3);
-			echo '<h3 style="clear:both;">' . get_cat_name(1) . '</h3>';
-			echo il10_fp_excerpts(1,3);
+			echo '<h3 style="clear:both;"><a href="' . get_category_link( 2 ) . '">' . get_cat_name( 2 ) . '</a></h3>';
+			echo il10_fp_excerpts( 2,3 );
+			echo '<h3 style="clear:both;"><a href="' . get_category_link( 1 ) . '">' . get_cat_name( 1 ) . '</a></h3>';
+			echo il10_fp_excerpts( 1,3 );
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'il10' ),
 				'after'  => '</div>',
