@@ -347,11 +347,10 @@ blockquote {
     background: #ccc;
     padding-left: 2em;
     padding-right: 2em;
-    margin: 0;
     font-family: "Courier 10 Pitch", Courier, monospace;
 }
 blockquote p {
-    margin-bottom: 1em;
+    margin-bottom: .75em;
 }
 
 address {
