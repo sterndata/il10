@@ -19,6 +19,8 @@ Components is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
+
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -43,11 +45,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
   ## Galleries
 --------------------------------------------------------------*/
+
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
+
 html {
-  font-family: 'Lato',sans-serif;
+  font-family: 'Lato', sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -56,25 +61,11 @@ body {
   margin: 0;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
   display: block;
 }
 
-audio,
-canvas,
-progress,
-video {
+audio, canvas, progress, video {
   display: inline-block;
   vertical-align: baseline;
 }
@@ -84,8 +75,7 @@ audio:not([controls]) {
   height: 0;
 }
 
-[hidden],
-template {
+[hidden], template {
   display: none;
 }
 
@@ -93,8 +83,7 @@ a {
   background-color: transparent;
 }
 
-a:active,
-a:hover {
+a:active, a:hover {
   outline: 0;
 }
 
@@ -102,8 +91,7 @@ abbr[title] {
   border-bottom: 1px dotted;
 }
 
-b,
-strong {
+b, strong {
   font-weight: bold;
 }
 
@@ -125,8 +113,7 @@ small {
   font-size: 80%;
 }
 
-sub,
-sup {
+sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -162,19 +149,12 @@ pre {
   overflow: auto;
 }
 
-code,
-kbd,
-pre,
-samp {
+code, kbd, pre, samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
 
-button,
-input,
-optgroup,
-select,
-textarea {
+button, input, optgroup, select, textarea {
   color: inherit;
   font: inherit;
   margin: 0;
@@ -184,26 +164,20 @@ button {
   overflow: visible;
 }
 
-button,
-select {
+button, select {
   text-transform: none;
 }
 
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
 }
 
-button[disabled],
-html input[disabled] {
+button[disabled], html input[disabled] {
   cursor: default;
 }
 
-button::-moz-focus-inner,
-input::-moz-focus-inner {
+button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
@@ -212,14 +186,12 @@ input {
   line-height: normal;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -228,8 +200,7 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -257,15 +228,18 @@ table {
   border-spacing: 0;
 }
 
-td,
-th {
+td, th {
   padding: 0;
 }
+
 
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
+
+
 /* Text meant only for screen readers. */
+
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
@@ -273,6 +247,7 @@ th {
   width: 1px;
   overflow: hidden;
 }
+
 .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
@@ -294,14 +269,18 @@ th {
   /* Above WP toolbar. */
 }
 
+
 /* Do not show the outline on the skip link target. */
+
 #content[tabindex="-1"]:focus {
   outline: 0;
 }
 
+
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
+
 .alignleft {
   display: inline;
   float: left;
@@ -321,45 +300,29 @@ th {
   margin-right: auto;
 }
 
+
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
-.clear:before,
-.clear:after,
-.entry-content:before,
-.entry-content:after,
-.comment-content:before,
-.comment-content:after,
-.site-header:before,
-.site-header:after,
-.site-content:before,
-.site-content:after,
-.site-footer:before,
-.site-footer:after {
+
+.clear:before, .clear:after, .entry-content:before, .entry-content:after, .comment-content:before, .comment-content:after, .site-header:before, .site-header:after, .site-content:before, .site-content:after, .site-footer:before, .site-footer:after {
   content: "";
   display: table;
   table-layout: fixed;
 }
 
-.clear:after,
-.entry-content:after,
-.comment-content:after,
-.site-header:after,
-.site-content:after,
-.site-footer:after {
+.clear:after, .entry-content:after, .comment-content:after, .site-header:after, .site-content:after, .site-footer:after {
   clear: both;
 }
+
 
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-body,
-button,
-input,
-select,
-textarea {
+
+body, button, input, select, textarea {
   color: #404040;
-  font-family: 'Lato',sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -378,7 +341,17 @@ dfn, cite, em, i {
 }
 
 blockquote {
-  margin: 0 1.5em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #888;
+    background: #ccc;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: 0;
+    font-family: "Courier 10 Pitch", Courier, monospace;
+}
+blockquote p {
+    margin-bottom: 1em;
 }
 
 address {
@@ -420,49 +393,23 @@ big {
 blockquote, q {
   quotes: "" "";
 }
+
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
 }
 
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
-textarea {
+
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
   color: #666;
   border: 1px solid #ccc;
   border-radius: 3px;
 }
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-input[type="range"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="color"]:focus,
-textarea:focus {
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="color"]:focus, textarea:focus {
   color: #111;
 }
 
@@ -470,21 +417,7 @@ select {
   border: 1px solid #ccc;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"] {
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"] {
   padding: 3px;
 }
 
@@ -493,13 +426,12 @@ textarea {
   width: 100%;
 }
 
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
@@ -512,27 +444,22 @@ input[type="submit"] {
   padding: .6em 1em .4em;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
+
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
   border-color: #ccc #bbb #aaa;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
 }
-button:active, button:focus,
-input[type="button"]:active,
-input[type="button"]:focus,
-input[type="reset"]:active,
-input[type="reset"]:focus,
-input[type="submit"]:active,
-input[type="submit"]:focus {
+
+button:active, button:focus, input[type="button"]:active, input[type="button"]:focus, input[type="reset"]:active, input[type="reset"]:focus, input[type="submit"]:active, input[type="submit"]:focus {
   border-color: #aaa #bbb #bbb;
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
+
 /*--------------------------------------------------------------
 # Formattings
 --------------------------------------------------------------*/
+
 hr {
   background-color: #ccc;
   border: 0;
@@ -540,9 +467,11 @@ hr {
   margin-bottom: 1.5em;
 }
 
+
 /*--------------------------------------------------------------
 # Lists
 --------------------------------------------------------------*/
+
 ul, ol {
   margin: 0 0 1.5em 0;
 }
@@ -555,8 +484,7 @@ ol {
   list-style: decimal;
 }
 
-li > ul,
-li > ol {
+li>ul, li>ol {
   margin-bottom: 0;
   margin-left: 1.5em;
 }
@@ -569,118 +497,142 @@ dd {
   margin: 0 1.5em 1.5em;
 }
 
+
 /*--------------------------------------------------------------
 # Tables
 --------------------------------------------------------------*/
+
 table {
   margin: 0 0 1.5em;
   width: 100%;
 }
+
+
 /*--------------------------------------------------------------
 # Main Layout
 --------------------------------------------------------------*/
+
 .site-header, .site-content, .site-info, #top-menu {
-	max-width: 1450px;
-	margin:0 auto;
-        padding-left: 1em;
-        padding-right: 1em;
+  max-width: 1450px;
+  margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em;
 }
+
 #footer-widget-areas {
-        max-width: 1450px;
-        margin:0 auto;
-        padding-left:1em;
-	padding-right: 1em;
+  max-width: 1450px;
+  margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em;
 }
+
 #masthead-container, #colophon {
-	background-color: #1968ab;
-	color: #fff;
+  background-color: #1968ab;
+  color: #fff;
 }
+
 .site-header {
-	position:relative;
+  position: relative;
 }
+
 div#sidebar-header-1 {
-    position: absolute;
-    right: 1em;
-    top: 1em;
+  position: absolute;
+  right: 1em;
+  top: 1em;
 }
+
 #site-navigation {
-	background-color: #10b3de;
+  background-color: #10b3de;
 }
+
 .site-info {
-	color: #fff;
-        clear:both;
-        text-align:center;
-        font-size: 90%;
+  color: #fff;
+  clear: both;
+  text-align: center;
+  font-size: 90%;
 }
+
 .site-main {
-   padding-right: 10px;
+  padding-right: 10px;
 }
+
 #secondary {
-   padding-left: 10px;
+  padding-left: 10px;
 }
+
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+
 .main-navigation {
   clear: both;
   display: block;
   float: left;
   width: 100%;
 }
+
 .main-navigation ul {
   display: none;
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
+
 .main-navigation ul ul {
   margin-left: 1.5em;
 }
+
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
-.main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
+
+.main-navigation ul ul li:hover>ul, .main-navigation ul ul li.focus>ul {
   left: 100%;
 }
+
 .main-navigation ul ul a {
   width: 200px;
 }
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
+
+.main-navigation ul li:hover>ul, .main-navigation ul li.focus>ul {
   left: auto;
 }
+
 .main-navigation li {
   position: relative;
-  margin-right:1px;
+  margin-right: 1px;
   margin-left: 1px;
 }
+
 .main-navigation a {
   display: block;
   text-decoration: none;
   padding-left: 5px;
   padding-right: 5px;
-
 }
-.main-navigation a:hover,
-.main-navigation .current_page_item a,
-.main-navigation .current-menu-item a {
+
+.main-navigation a:hover, .main-navigation .current_page_item a, .main-navigation .current-menu-item a {
   color: #fff;
   background-color: #1968ab;
   text-decoration: none;
 }
 
+
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
+
+.menu-toggle, .main-navigation.toggled ul {
   display: block;
 }
+
 button.menu-toggle {
-    width: 100%;
-    text-align: right;
-    font-weight: bold;
-    font-size: 100%;
+  width: 100%;
+  text-align: right;
+  font-weight: bold;
+  font-size: 100%;
 }
+
 .menu-toggle:before {
   content: "\2630";
   display: inline-block;
@@ -702,47 +654,46 @@ button.menu-toggle {
   }
   .main-navigation ul ul {
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+		background-color: lightblue;
     float: left;
     position: absolute;
     top: 1.5em;
-    margin-left:0;
+    margin-left: 0;
     left: -999em;
     z-index: 99999;
   }
   #sidebar-footer-1 {
     width: 35%;
-    float:left;
+    float: left;
   }
   #sidebar-footer-2 {
     width: 65%;
-    padding-left:10px;
-    float:left;
-    }
-
+    padding-left: 10px;
+    float: left;
+  }
 }
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
+
+.site-main .comment-navigation, .site-main .posts-navigation, .site-main .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
+
+.comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
+
+.comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next {
   float: right;
   text-align: right;
   width: 50%;
 }
 
+
 /*--------------------------------------------------------------
 # Links
 --------------------------------------------------------------*/
+
 a, a:visited {
   color: #1968ab;
   text-decoration: none;
@@ -750,29 +701,31 @@ a, a:visited {
 
 a:hover, a:focus, a:active {
   color: #4998cb;
-  text-decoration:underline;
+  text-decoration: underline;
 }
+
 a:focus {
   outline: thin dotted;
 }
+
 a:hover, a:active {
   outline: 0;
 }
-.site-header a, .site-info a,
-.site-header a:visited, .site-info a:visited {
-	color: #fff;
+
+.site-header a, .site-info a, .site-header a:visited, .site-info a:visited {
+  color: #fff;
 }
+
 
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
+
 html {
   box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
   box-sizing: inherit;
 }
@@ -782,32 +735,34 @@ body {
   /* Fallback for when there is no custom background color defined. */
 }
 
+
+/* The non-mobile view */
+
 @media screen and (min-width: 37.5em) {
-    .content-area {
-      float: left;
-      margin: 0 -25% 0 0;
-      width: 100%;
-    }
-
-    .site-main {
-      margin: 0 25% 0 0;
-    }
-
-    .site-content .widget-area {
-      float: right;
-      overflow: hidden;
-      width: 25%;
-    }
-
-    .site-footer {
-      clear: both;
-      width: 100%;
-    }
+  .content-area {
+    float: left;
+    margin: 0 -25% 0 0;
+    width: 100%;
+  }
+  .site-main {
+    margin: 0 25% 0 0;
+  }
+  .site-content .widget-area {
+    float: right;
+    overflow: hidden;
+    width: 25%;
+  }
+  .site-footer {
+    clear: both;
+    width: 100%;
+  }
 }
+
 
 /*--------------------------------------------------------------
 ## Single Column / No Active Sidebar
 --------------------------------------------------------------*/
+
 .no-sidebar .site-main {
   margin: 0;
 }
@@ -818,9 +773,11 @@ body {
   margin-right: auto;
 }
 
+
 /*--------------------------------------------------------------
 ## Posts
 --------------------------------------------------------------*/
+
 .sticky {
   display: block;
 }
@@ -829,33 +786,33 @@ body {
   margin: 0 0 1.5em;
 }
 
-.byline,
-.updated:not(.published) {
+.byline, .updated:not(.published) {
   display: none;
 }
 
-.single .byline,
-.group-blog .byline {
+.single .byline, .group-blog .byline {
   display: inline;
 }
 
-.page-content,
-.entry-content,
-.entry-summary {
+.page-content, .entry-content, .entry-summary {
   margin: 1.5em 0 0;
 }
+
 
 /*--------------------------------------------------------------
 ## Pages
 --------------------------------------------------------------*/
+
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
 }
 
+
 /*--------------------------------------------------------------
 # Comments
 --------------------------------------------------------------*/
+
 .comment-content a {
   word-wrap: break-word;
 }
@@ -864,74 +821,90 @@ body {
   display: block;
 }
 
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+
 .widget {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets. */
 }
+
 .widget select {
   max-width: 100%;
 }
+
 h2.widget-title {
   margin-top: 0
 }
-.home #secondary .widget,
-.home #secondary .widget a,
-.home #secondary .widget a:visited {
+
+.home #secondary .widget, .home #secondary .widget a, .home #secondary .widget a:visited {
   color: #fff;
 }
+
 #secondary {
   margin-top: 3em;
 }
 
-#secondary h2.widget-title { 
+#secondary h2.widget-title {
   background-color: #1968ab;
   color: #fff;
   padding-left: .5em;
   padding-right: .5em;
 }
+
 #secondary .widget {
   background-color: lightblue;
   padding-bottom: .5em;
 }
+
 .home #secondary .widget {
   background-color: #1968ab;
   padding-left: .5em;
   padding-right: .5em;
   padding-top: .5em;
 }
+
 .home #secondary .widget h2 {
   color: #ffc600;
 }
+
 #search-2.widget.widget_search {
   padding-top: 1em;
   padding-left: 1em;
 }
-#secondary .textwidget,
-#secondary .tlw-list {
+
+#secondary .textwidget, #secondary .tlw-list {
   padding-left: 1em;
   padding-right: 1em;
 }
+
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
+
+
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation,
-.infinite-scroll.neverending .site-footer {
+
+.infinite-scroll .posts-navigation, .infinite-scroll.neverending .site-footer {
   /* Theme Footer (when set to scrolling) */
   display: none;
 }
 
+
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+
 .infinity-end.neverending .site-footer {
   display: block;
 }
 
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
+
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -939,19 +912,17 @@ img {
   /* Adhere to container width. */
 }
 
-.page-content .wp-smiley,
-.entry-content .wp-smiley,
-.comment-content .wp-smiley {
+.page-content .wp-smiley, .entry-content .wp-smiley, .comment-content .wp-smiley {
   border: none;
   margin-bottom: 0;
   margin-top: 0;
   padding: 0;
 }
 
+
 /* Make sure embeds and iframes fit their containers. */
-embed,
-iframe,
-object {
+
+embed, iframe, object {
   max-width: 100%;
 }
 
@@ -959,35 +930,45 @@ object {
   margin: 1em 0 1.5em;
   max-width: 100%;
 }
+
 .wp-caption img[class*="wp-image-"] {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
 .wp-caption .wp-caption-text {
   margin: 0.8075em 0;
 }
 
+
 /* Ensure center-aligned captions center-align properly. */
+
 .wp-caption.aligncenter {
   margin-left: auto;
   margin-right: auto;
 }
 
+
 /* Give some padding to floated elements, to prevent them butting up against text. */
+
 .wp-caption.alignleft {
   margin-right: 20px;
 }
+
 .wp-caption.alignright {
   margin-left: 20px;
 }
+
 .wp-caption-text {
   text-align: center;
 }
 
+
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
+
 .gallery {
   margin-bottom: 1.5em;
 }
@@ -998,27 +979,35 @@ object {
   vertical-align: top;
   width: 100%;
 }
+
 .gallery-columns-2 .gallery-item {
   max-width: 50%;
 }
+
 .gallery-columns-3 .gallery-item {
   max-width: 33.33%;
 }
+
 .gallery-columns-4 .gallery-item {
   max-width: 25%;
 }
+
 .gallery-columns-5 .gallery-item {
   max-width: 20%;
 }
+
 .gallery-columns-6 .gallery-item {
   max-width: 16.66%;
 }
+
 .gallery-columns-7 .gallery-item {
   max-width: 14.28%;
 }
+
 .gallery-columns-8 .gallery-item {
   max-width: 12.5%;
 }
+
 .gallery-columns-9 .gallery-item {
   max-width: 11.11%;
 }
@@ -1027,31 +1016,41 @@ object {
   display: block;
 }
 
+
 /* All In One Event Calendar */
-.ai1ec-single-event .ai1ec-event-avatar  {
-   display:none;
+
+.ai1ec-single-event .ai1ec-event-avatar {
+  display: none;
 }
+
+
 /* Front Page stuff */
+
 .fp_excerpt {
   width: 90%;
   margin: 0 auto;
   padding-top: 1.5em;
-  clear:both;
+  clear: both;
 }
+
 .fp_excerpt_thumb {
-  float:left;
+  float: left;
   margin-right: 1em;
 }
+
 .fp_excerpt h4 {
   margin: 0;
 }
+
 .fp_excerpt h4 a {
   color: #404040;
   text-decoration: none;
 }
+
 .fp_excerpt p:first-of-type {
   margin-top: 0;
 }
+
 .fp_excerpt_thumb img {
   border-radius: 10px;
 }
@@ -1061,26 +1060,32 @@ object {
   margin: 0 auto;
   background-color: #ffc600;
   border-radius: 10px;
-  text-align:center;
-  font-size:200%;
+  text-align: center;
+  font-size: 200%;
   transition: box-shadow .25s;
   box-shadow: 0px 0px 5px 4px #888;
 }
+
 .join_button:hover {
   box-shadow: none;
 }
+
 .join_button_txt {
   text-shadow: 1px 1px 2px #444;
   font-weight: bold;
 }
+
 .join_button_txt a {
   color: #fff;
 }
+
 .join_button_txt a:hover {
   text-decoration: none;
 }
 
+
 /* formidable */
+
 .frm_forms {
   width: 80%;
   margin: 0 auto;

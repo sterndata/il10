@@ -30,7 +30,7 @@ if ( ! function_exists( 'il10_setup' ) ) :
 		/*
 		 * Let WordPress manage the document title.
 		 * By adding theme support, we declare that this theme does not use a
-		 * hard-coded <title> tag in the document head, and expect WordPress to
+		 * hard-coded <title> tag in the document head, and expect WordPress toIssues
 		 * provide it for us.
 		 */
 		add_theme_support( 'title-tag' );
@@ -223,39 +223,34 @@ function il10_fp_excerpts() {
 	*/
 
 	ob_start();
-	$cats = array( 2, 3, 1 );  // actions, candidates, bloginfo
-
 	$args = array(
-		'posts_per_page' => 1,
+		'posts_per_page' => 5,
 		'offset' => 0,
-		'cat' => 0,
+		// 'cat' => 0,
 		'orderby' => 'post_date',
 		'order' => 'DESC',
 		'post_type' => 'post',
 		'post_status' => 'publish',
 	);
 
-	foreach ( $cats as $cat_id ) {
-		$args['cat'] = $cat_id;
 		$recent_post = new WP_Query( $args );
-		if ( $recent_post->have_posts() ) {
-			while ( $recent_post->have_posts() ) {
+	if ( $recent_post->have_posts() ) {
+		while ( $recent_post->have_posts() ) {
 				$recent_post->the_post();
 				echo '<div class="fp_excerpt">';
-				if ( has_post_thumbnail() ) {
+			if ( has_post_thumbnail() ) {
 					echo '<div class="fp_excerpt_thumb">';
 					echo '<a href="' . get_the_permalink() . '">';
 					echo '<img src="' . get_the_post_thumbnail_url( get_the_ID(), 'thumbnail' ) . '"/></a>';
 					echo '</div>';
-				}
+			}
 				echo '<h4><a href="' . get_the_permalink() . '">' . get_the_title() . '</a></h4>';
 				the_excerpt();
 				echo '</div>';
-			}
-			wp_reset_query();
-		} else {
-			echo '<p>No posts for cat id ' . $cat_id . '</p>';
 		}
+			wp_reset_query();
+	} else {
+			echo '<p>No posts found.</p>';
 	}
 		return ob_get_clean();
 }
@@ -277,5 +272,3 @@ function il10_join_button() {
 	return ob_get_clean();
 	}
 add_shortcode('join_button', 'il10_join_button' );
-
-
