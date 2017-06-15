@@ -529,7 +529,11 @@ table {
   background-color: #1968ab;
   color: #fff;
 }
-
+#colophon, #masthead-container {
+  background: url('images/background.png');
+  background-position: top center;
+  background-size: cover;
+}
 .site-header {
   position: relative;
 }
