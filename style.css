@@ -1118,3 +1118,6 @@ embed, iframe, object {
 section#wpcom_social_media_icons_widget-2 {
     text-align: right;
 }
+.widget_wpcom_social_media_icons_widget .genericon {
+  font-size: 24px;
+}
