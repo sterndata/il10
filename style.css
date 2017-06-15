@@ -539,9 +539,15 @@ table {
 }
 
 div#sidebar-header-1 {
-  position: absolute;
-  right: 1em;
-  top: 1em;
+  float:right;
+}
+@media screen and (min-width: 800px) {
+  div#sidebar-header-1 {
+    float:none;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+  }
 }
 
 #site-navigation {
@@ -1108,4 +1114,7 @@ embed, iframe, object {
 
 .widget .tagcloud {
 	padding: 0 1em 0 1em;
+}
+section#wpcom_social_media_icons_widget-2 {
+    text-align: right;
 }
