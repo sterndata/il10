@@ -674,10 +674,11 @@ button.menu-toggle {
   #sidebar-footer-1 {
     width: 35%;
     float: left;
+    padding-right: .75em;
   }
   #sidebar-footer-2 {
     width: 65%;
-    padding-left: 10px;
+    padding-left: .75em;
     float: left;
   }
 }
