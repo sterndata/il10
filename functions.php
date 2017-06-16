@@ -243,6 +243,12 @@ function il10_fp_excerpts( $cat_id=1, $number=3 ) {
 					echo '<a href="' . get_the_permalink() . '">';
 					echo '<img src="' . get_the_post_thumbnail_url( get_the_ID(), 'thumbnail' ) . '"/></a>';
 					echo '</div>';
+				}	else {
+					$default = get_page_by_title( 'Default Featured Image' );
+					echo '<div class="fp_excerpt_thumb">';
+					echo '<a href="' . get_the_permalink() . '">';
+					echo '<img src="' . get_the_post_thumbnail_url( $default->ID, 'thumbnail' ) . '"/></a>';
+					echo '</div>';
 			}
 				echo '<h4><a href="' . get_the_permalink() . '">' . get_the_title() . '</a></h4>';
 				the_excerpt();
