@@ -888,6 +888,9 @@ h2.widget-title {
   padding-left: 1em;
 }
 
+.widget_nav_menu li>ul {
+  margin-left: -1.25em;
+}
 #secondary .textwidget, #secondary .tlw-list {
   padding-left: 1em;
   padding-right: 1em;
@@ -1050,9 +1053,11 @@ embed, iframe, object {
   float: left;
   margin-right: 1em;
 }
-
-.fp_excerpt h4 {
-  margin: 0;
+.fp_excerpt_thumb img:hover {
+    box-shadow: 0 0 9px 3px #ccc;
+}
+.fp_excerpt_thumb img:active {
+    box-shadow:initial; 
 }
 
 .fp_excerpt h4 a {
