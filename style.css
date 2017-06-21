@@ -673,7 +673,7 @@ button.menu-toggle {
 		background-color: lightblue;
     float: left;
     position: absolute;
-    top: 1.5em;
+    top: 2em;
     margin-left: 0;
     left: -999em;
     z-index: 99999;
