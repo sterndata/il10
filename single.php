@@ -16,8 +16,11 @@ get_header(); ?>
 		while ( have_posts() ) : the_post();
 
 			get_template_part( 'components/post/content', get_post_format() );
-
-			the_post_navigation();
+			$navargs = array( 
+					'prev_text' => 'Previous: %title',
+					'next_text' => 'Next: %title',
+					);
+			the_post_navigation( $navargs );
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
