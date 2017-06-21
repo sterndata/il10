@@ -42,7 +42,7 @@ if ( ! function_exists( 'il10_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
-		add_image_size( 'il10-featured-image', 640, 9999 );
+		// add_image_size( 'il10-featured-image', 640, 9999 );
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(

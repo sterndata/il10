@@ -17,7 +17,7 @@
 		<?php
 		if ( '' != get_the_post_thumbnail() ) { ?>
                         <div class="post-thumbnail">
-                        <?php the_post_thumbnail( 'il10-featured-image' ); ?>
+                        <?php the_post_thumbnail( 'medium' ); ?>
                         </div>
                 <?php
                 }
