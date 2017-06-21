@@ -150,15 +150,15 @@ function il10_widgets_init() {
 				'before_title'  => '<h2 class="widget-title">',
 				'after_title'   => '</h2>',
 	) );
-        register_sidebar( array(
-                                'name'          => esc_html__( 'Footer 2', 'il10' ),
-                                'id'            => 'footer-2',
-                                'description'   => '',
-                                'before_widget' => '<section id="%1$s" class="widget %2$s">',
-                                'after_widget'  => '</section>',
-                                'before_title'  => '<h2 class="widget-title">',
-                                'after_title'   => '</h2>',
-        ) );
+		register_sidebar( array(
+								'name'          => esc_html__( 'Footer 2', 'il10' ),
+								'id'            => 'footer-2',
+								'description'   => '',
+								'before_widget' => '<section id="%1$s" class="widget %2$s">',
+								'after_widget'  => '</section>',
+								'before_title'  => '<h2 class="widget-title">',
+								'after_title'   => '</h2>',
+		) );
 
 }
 add_action( 'widgets_init', 'il10_widgets_init' );
@@ -216,7 +216,7 @@ function jetpack_modify_remove_excerpt_share() {
 }
 add_action( 'loop_start', 'jetpack_modify_remove_excerpt_share' );
 
-function il10_fp_excerpts( $cat_id=1, $number=3 ) {
+function il10_fp_excerpts( $cat_id = 1, $number = 3 ) {
 
 	/* get the most recent post for each of the categories and show an excerpt with
 	* thumbnail and links_add_base_url
@@ -243,12 +243,12 @@ function il10_fp_excerpts( $cat_id=1, $number=3 ) {
 					echo '<a href="' . get_the_permalink() . '">';
 					echo '<img src="' . get_the_post_thumbnail_url( get_the_ID(), 'thumbnail' ) . '"/></a>';
 					echo '</div>';
-				}	else {
-					$default = get_page_by_title( 'Default Featured Image' );
-					echo '<div class="fp_excerpt_thumb">';
-					echo '<a href="' . get_the_permalink() . '">';
-					echo '<img src="' . get_the_post_thumbnail_url( $default->ID, 'thumbnail' ) . '"/></a>';
-					echo '</div>';
+			} else {
+				$default = get_page_by_title( 'Default Featured Image' );
+				echo '<div class="fp_excerpt_thumb">';
+				echo '<a href="' . get_the_permalink() . '">';
+				echo '<img src="' . get_the_post_thumbnail_url( $default->ID, 'thumbnail' ) . '"/></a>';
+				echo '</div>';
 			}
 				echo '<h4><a href="' . get_the_permalink() . '">' . get_the_title() . '</a></h4>';
 				the_excerpt();
@@ -276,8 +276,8 @@ function il10_join_button() {
 </div>
 	<?php
 	return ob_get_clean();
-	}
-add_shortcode('join_button', 'il10_join_button' );
+}
+add_shortcode( 'join_button', 'il10_join_button' );
 
 /* remove "Category:" from archive title */
 
