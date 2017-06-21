@@ -1040,7 +1040,12 @@ embed, iframe, object {
   display: block;
 }
 
-
+/* featured images */
+.entry-content .post-thumbnail {
+   float:left;
+   margin-right: 1em;
+   margin-bottom: 1em;
+}
 /* All In One Event Calendar */
 
 .ai1ec-single-event .ai1ec-event-avatar {

@@ -15,6 +15,13 @@
 	</header>
 	<div class="entry-content">
 		<?php
+		if ( '' != get_the_post_thumbnail() ) { ?>
+                        <div class="post-thumbnail">
+                        <?php the_post_thumbnail( 'il10-featured-image' ); ?>
+                        </div>
+                <?php
+                }
+
 			the_content();
 
 			wp_link_pages( array(
