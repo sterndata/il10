@@ -804,7 +804,7 @@ body {
 }
 
 .single .byline, .group-blog .byline {
-  display: inline;
+  display: none;
 }
 
 .page-content, .entry-content, .entry-summary {
