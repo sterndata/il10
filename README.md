@@ -2,7 +2,7 @@
 
 Designed by Doug Bantz and developed by Steven Stern for
 
-Northshore Indivisible
+Northshore Indivisible https://northshoreindivisible.com
 
 This theme is available under the GPL for other Indivisble organizations.
 
